@@ -74,7 +74,6 @@ table.include.list: Specifies the tables to monitor (e.g., dbo.your_table_name).
 > Kafka-based storage is more scalable and performant.
 > For local testing file based is preferred.
 > 
-> [!IMPORTANT]
 > When you move to a production environment, you can switch to Kafka-based schema history by updating the configuration
 > 
 > database.history = io.debezium.relational.history.KafkaDatabaseHistory
