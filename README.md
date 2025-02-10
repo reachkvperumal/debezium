@@ -42,7 +42,7 @@ Spring Integration can be used to process Debezium events in real-time.
 - Define an IntegrationFlow to process the change events.
 - Handle the processed events (e.g., log, store, or send to another system).
 
-# Properties definition in [DebeziumConfig.java](src/main/com/kv/debezium/example/cdc_example/configuration/DebeziumConfig.java)
+# Properties definition in [DebeziumConfig.java](https://github.com/reachkvperumal/debezium/src/main/com/kv/debezium/example/cdc_example/configuration/DebeziumConfig.java)
 
 name: This property uniquely identifies the connector instance. 
       This is especially important if you have multiple connectors running in the same application or environment
@@ -89,7 +89,7 @@ database.history: [schema-history.txt](src/main/resources/db/schema-history.txt)
 
 - When the connector starts, it reads the schema history from the file to reconstruct the schema as it was at the time of each change.
 
-## Configuration details - [DebeziumConfig](src/main/java/com/kv/debezium/example/cdc_example/configuration/DebeziumConfig.java)
+## Configuration details - [DebeziumConfig](https://github.com/reachkvperumal/debezium/src/main/java/com/kv/debezium/example/cdc_example/configuration/DebeziumConfig.java)
 > This class is the backbone of the integration between Debezium and Spring Integration, 
 > enabling real-time change data capture (CDC) from Azure SQL and forwarding the events to Kafka.
 
