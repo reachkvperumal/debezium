@@ -89,7 +89,7 @@ database.history: [schema-history.txt](src/main/resources/db/schema-history.txt)
 
 - When the connector starts, it reads the schema history from the file to reconstruct the schema as it was at the time of each change.
 
-## Configuration details - [DebeziumConfig](https://github.com/reachkvperumal/debezium/src/main/java/com/kv/debezium/example/cdc_example/configuration/DebeziumConfig.java)
+## Configuration details - [DebeziumConfig](https://github.com/reachkvperumal/debezium/blob/main/src/main/java/com/kv/debezium/example/cdc_example/configuration/IntegrationConfig.java)
 > This class is the backbone of the integration between Debezium and Spring Integration, 
 > enabling real-time change data capture (CDC) from Azure SQL and forwarding the events to Kafka.
 
