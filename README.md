@@ -89,7 +89,7 @@ database.history: [schema-history.txt](src/main/resources/db/schema-history.txt)
 
 - When the connector starts, it reads the schema history from the file to reconstruct the schema as it was at the time of each change.
 
-## Configuration details - [DebeziumConfig](https://github.com/reachkvperumal/debezium/blob/main/src/main/java/com/kv/debezium/example/cdc_example/configuration/IntegrationConfig.java)
+## Configuration details - [DebeziumConfig](https://github.com/reachkvperumal/debezium/blob/main/src/main/java/com/kv/debezium/example/cdc_example/configuration/DebeziumConfig.java)
 > This class is the backbone of the integration between Debezium and Spring Integration, 
 > enabling real-time change data capture (CDC) from Azure SQL and forwarding the events to Kafka.
 
@@ -108,7 +108,7 @@ database.history: [schema-history.txt](src/main/resources/db/schema-history.txt)
 **Runs Debezium Asynchronously:**
 - Uses an Executor to start the Debezium engine in a separate thread.
 
-## Integration flow - [IntegrationConfig](src/main/java/com/kv/debezium/example/cdc_example/configuration/IntegrationConfig.java)
+## Integration flow - [IntegrationConfig](https://github.com/reachkvperumal/debezium/blob/main/src/main/java/com/kv/debezium/example/cdc_example/configuration/IntegrationConfig.java)
 - `IntegrationFlow` consumes events from the debeziumEventsChannel.
 - `.transform()` method processes each event. In this example, it transforms to json.
 - `.handle()` method processes payload. In this example, it posts with Kafka topic.
