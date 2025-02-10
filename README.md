@@ -77,6 +77,7 @@ table.include.list: Specifies the tables to monitor (e.g., dbo.your_table_name).
 > When you move to a production environment, you can switch to Kafka-based schema history by updating the configuration
 
 > database.history = io.debezium.relational.history.KafkaDatabaseHistory
+> 
 > database.history.kafka.bootstrap.servers=${bootStrapServers}
 > database.history.kafka.topic=${kafka.topicName}
 
