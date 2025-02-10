@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: cdc-example
+  main:
+    web-application-type: none
+
+debezium:
+  database:
+    hostname: ${hostName}
+    port: ${port}
+    user: ${userName}
+    secret: ${secret}
+    dbname: ${dbname}
+    serverId: ${serverId}
+    serverName: ${serverName}
+    class: ${connectorClass}
+    table_name: ${table_name}
+    history: io.debezium.relational.history.FileDatabaseHistory
+    history_file: classpath:db/schema-history.txt
+  connector-name: io.debezium.connector.sqlserver.SqlServerConnector
+
+
+
+kafka:
+  topic: ${topic-name}
+  bootstrap:
+    names: ${names}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "type": "CREATE_TABLE",
+    "timestamp": 1672531200000,
+    "schema": "dbo",
+    "table": "orders",
+    "columns": [
+      {"name": "id", "type": "INT", "primaryKey": true},
+      {"name": "customer_id", "type": "INT"},
+      {"name": "amount", "type": "DECIMAL(10,2)"}
+    ]
+  },
+  {
+    "id": "2",
+    "type": "ALTER_TABLE",
+    "timestamp": 1672617600000,
+    "schema": "dbo",
+    "table": "orders",
+    "changes": [
+      {"type": "ADD_COLUMN", "column": {"name": "order_date", "type": "DATE"}}
+    ]
+  }
+]
